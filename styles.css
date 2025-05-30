@@ -1,0 +1,95 @@
+/* Global background */
+body {
+    background-color: #1a1a2e;
+    color: #ffffff;
+}
+
+.background {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(270deg, #ffb6c1, #ffe4e1, #b2fefa, #fbc2eb, #fad0c4, #a1c4fd, #c2e9fb, #fcb69f, #ffdde1);
+    background-size: 1800% 1800%;
+    animation: gradientBG 18s ease-in-out infinite;
+}
+
+@keyframes gradientBG {
+    0% {background-position: 0% 50%;}
+    25% {background-position: 50% 100%;}
+    50% {background-position: 100% 50%;}
+    75% {background-position: 50% 0%;}
+    100% {background-position: 0% 50%;}
+}
+
+/* Optional: Make text pop on colorful backgrounds */
+.welcome-text, .subtext {
+    text-shadow: 2px 2px 8px #fff, 0 0 2px #fff;
+}
+
+.welcome-text {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #e75480;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin-top: 2rem;
+    text-shadow: 2px 2px 8px #fff0f5;
+}
+
+.subtext {
+    text-align: center;
+    font-size: 1.3rem;
+    color: #6a0572;
+    margin-bottom: 2rem;
+}
+
+.stTextInput > div > input {
+    background: #fff0f5;
+    border: 2px solid #e75480;
+    border-radius: 8px;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.stButton > button {
+    background: linear-gradient(90deg, #e75480 0%, #b2fefa 100%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    padding: 0.7rem 2rem;
+    margin: 1rem 0;
+    transition: background 0.3s;
+    box-shadow: 0 4px 12px rgba(231,84,128,0.15);
+}
+
+.stButton > button:hover {
+    background: linear-gradient(90deg, #b2fefa 0%, #e75480 100%);
+    color: #fff;
+}
+
+.stAlert, .stSuccess {
+    border-radius: 8px;
+    font-size: 1.1rem;
+}
+
+/* Input box and button enhancements */
+input, .stTextInput > div > div > input {
+    background-color: #2f3542 !important;
+    color: #ffffff !important;
+    border: 2px solid #57606f !important;
+    border-radius: 8px;
+}
+
+button {
+    background-color: #ff6b81 !important;
+    color: white !important;
+    border-radius: 10px !important;
+    font-size: 1rem !important;
+    font-weight: bold !important;
+}
+
+.stButton>button:hover {
+    background-color: #ff4757 !important;
+}
